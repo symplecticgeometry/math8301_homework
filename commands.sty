@@ -1,0 +1,123 @@
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{fact}[thm]{Fact}
+
+\numberwithin{thm}{subsection}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{assumption}[thm]{Assumption}
+\newtheorem{notation}[thm]{Notation}
+
+% \theoremstyle{remark}
+% \newtheorem{q}[thm]{Question}
+% \newtheorem{rmk}[thm]{Remark}
+% \newtheorem{example}[thm]{Example}
+% \newtheorem{complication}[thm]{Complication}
+% \newtheorem{convention}[thm]{Convention}
+% \newtheorem{warning}[thm]{Warning}
+% % \newtheorem{assumption}[thm]{Assumption}
+
+
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+%\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\newcommand{\hh}{\mathpzc{h}}
+
+\newcommand{\D}{\mathbb{D}}
+\renewcommand{\H}{\mathbb{H}}
+\newcommand{\C}{\mathbb{C}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\nV}{V}
+\newcommand{\K}{\mathbb{K}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\bdry}{\partial}
+\newcommand{\s}{\vskip.1in}
+\newcommand{\n}{\noindent}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\m}{\underline}
+\newcommand{\vp}{\varphi}
+\newcommand{\cm}{\bf}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\op}{\operatorname}
+\newcommand{\bs}{\boldsymbol}
+\newcommand{\Kur}{\mathscr{K}}
+\newcommand{\sa}{\rightsquigarrow}
+
+\newcommand{\cg}{\color{green}}
+\newcommand{\cb}{\color{black}}
+\newcommand{\cbu}{\color{blue}}
+\newcommand{\cred}{\color{red}}
+
+
+\newcommand{\set}[2]{\left\{\,#1\mid#2\,\right\}}
+\newcommand{\sett}[1]{\{\,#1\,\}}
+
+\newcommand{\exteriorDerivative}{d}
+\newcommand{\wedgeProduct}{\wedge}
+\newcommand{\crossProduct}{\times}
+\newcommand{\manifold}[1]{#1}
+\newcommand{\oppositeManifold}[1]{#1^-}
+\newcommand{\lagrangian}[1]{#1}
+\newcommand{\coordinate}[1]{#1}
+\newcommand{\symplecticForm}[1]{#1}
+\newcommand{\canonicalSymplecticForm}[2]{\exteriorDerivative #1 \wedgeProduct \exteriorDerivative #2}
+\newcommand{\canonicalOneForm}[2]{#1 \wedgeProduct \exteriorDerivative #2}
+\newcommand{\cotangentBundle}[1]{T^*\manifold{#1}}
+\newcommand{\tangentBundle}[1]{T\manifold{#1}}
+\newcommand{\verticalDifferential}[1]{\mathrm{D_{vert}}(#1)}
+\newcommand{\horizontalBundle}[1]{H^*(#1)}
+\newcommand{\graph}[1]{\mathrm{Graph}(#1)}
+\newcommand{\differential}[1]{\exteriorDerivative #1}
+\newcommand{\graphOfTheDifferential}[1]{\graph{\differential{#1}}}
+\newcommand{\definedPhrase}[1]{{\it #1}}
+\newcommand{\fiberCriticalSet}[1]{\mathrm{FCrit_{#1}}}
+\newcommand{\intersect}{\cap}
+\newcommand{\dimension}{\mathrm{Dim}}
+\newcommand{\dotDotDotRange}[2]{#1\ldots #2}
+\newcommand{\secondMixedPartialDerivative}[3]{\frac{\partial^2 #1}{\partial #2\partial #3}}
+\newcommand{\secondPartialDerivative}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\partialDerivative}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\composedWith}{\circ}
+\newcommand{\derivative}{\mathrm{D}}
+\newcommand{\suchThat}{\ni}
+\newcommand{\morphismPushForward}[1]{#1_*}
+\newcommand{\vectorSpace}[1]{#1}
+\newcommand{\densityOnVectorSpace}[2]{|\vectorSpace{#1}|^{#2}}
+\newcommand{\tensorProduct}{\otimes}
+\newcommand{\oneHalf}{\frac{1}{2}}
+\newcommand{\hamiltonianOperator}{\hat H}
+\newcommand{\laplacian}{\Delta}
+\newcommand{\lieDerivative}[1]{\mathcal L_#1}
+\newcommand{\hamiltonianVectorField}[1]{X_#1}
+
+
+\newcommand{\Hom}{\mathrm{Hom}}
+
+
+\newcommand{\realNumbers}{\mathbb R}
+\newcommand{\integers}{\mathbb Z}
+
+
+\newcommand{\generalLinearGroup}[1]{\mathrm{GL}(\vectorSpace{#1})}
+
+
+
+
+\declaretheorem[name=Theorem]{theorem}
+\declaretheorem[style=definition,name=Definition,qed=$\blacktriangle$,sibling=theorem]{definition}
+
+\declaretheorem[style=definition,name=Problem,qed=$\blacktriangle$,sibling=theorem]{problem}
+

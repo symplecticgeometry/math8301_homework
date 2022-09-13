@@ -1,0 +1,72 @@
+\documentclass[12pt]{amsart}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Standard AMS packages
+\usepackage{amsthm,amsmath,amssymb,amscd,thmtools}
+\usepackage[pdftex, plainpages=false]{hyperref}   %% Hyper-references - To be use with PDF-TEX
+\usepackage{amsfonts, mathrsfs}
+\usepackage{lineno}
+\usepackage{commands}
+\usepackage{tikz,tikz-cd}
+
+
+\begin{document}
+
+\title{Homework 2}
+
+
+\maketitle
+\begin{problem}
+Show that the map $$\beta_h: \pi_1(X, x_1) \to \pi_1(X, x_0)$$
+$$[f] \mapsto [hfh^{-1}]$$
+is well-defined.
+\end{problem}
+
+
+\begin{problem}
+Let $X$ is a topological space, and $\sim$ is an equivalence relation on $X$. Show that $V\subset X/\sim$ is open if and only if $\pi^{-1}(V)$ is open, where $pi: X \to X/\sim$ is the projection.
+\end{problem}
+
+
+\begin{problem}
+Show that the following spaces are all homeomorphic to each other.
+\begin{itemize}
+    \item $S^1 = \{ |x|=1 ~|~ x \in \R^2\}$,
+    \item $S^1 = \R/\Z$, where $\Z$ acts on $\R$ by addition, and 
+    \item $S^1 = [0,1]/\sim$, where $0 \sim 1$ and $[0,1]\subset \R$ is given the induced topology.
+\end{itemize}
+\end{problem}
+
+\begin{problem}
+Show that the following spaces are all homotopy equivalent to $S^1$.
+\begin{itemize}
+    \item $\{ 1/2 \leq |x| \leq 1/3\}$,
+    \item $\R^2 -\{0\}$,
+    \item $ S^1 \times I$, and
+    \item $S^1 \times \R^n$.
+\end{itemize}
+\end{problem}
+
+\begin{problem}
+Show that if $A$ is a deformation retract of $X$, then $A$ is homotopy equivalent to $X$.
+\end{problem}
+
+\begin{problem}
+Show that if $\phi_t: X\to Y$ is a homotopy and $h$ is the path $\phi_t(x_0)$, then the two maps $$\pi_1(X) \xrightarrow{(\phi_1)_*} \pi_1(Y, \phi_1(x_0)) \xrightarrow{\beta_h} \pi_1(Y, \phi_0(x_0))$$ and 
+$$\pi_1(X,x_0)\xrightarrow{(\phi_0)_*} \pi_1(Y, \phi_0(x_0))$$
+agree.
+\end{problem}
+
+\begin{problem}
+Show if a group homomorphism $\phi: G\to H$ has left and right inverse, $\phi$ is an isomorphism.
+\end{problem}
+
+\begin{problem}
+Show that the product topology defined in lecture is indeed a topology, and show that it is the smallest topology such that the projection maps $X \times Y \to X$ and $X \times Y \to Y$ are continuous.
+\end{problem}
+
+\begin{problem}
+Show that if $f: Z \to X$ and $g: Z \to Y$ are continous, then $(f,g): Z \to X \times Y$ is continuous.
+\end{problem}
+
+\end{document}
