@@ -34,3 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+compile_pdf:
+  image: aergus/latex
+  script:
+    - latexmk -pdf 1.tex
+  artifacts:
+    paths:
+      - 1.pdf
